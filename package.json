@@ -1,0 +1,25 @@
+{
+  "name": "otp-based-authentication",
+  "version": "1.0.0",
+  "description": "Creating API using Node and express with otp-based authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "s@hil",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.2",
+    "nodemailer": "^6.9.2",
+    "otp-generator": "^4.0.1"
+  }
+}
