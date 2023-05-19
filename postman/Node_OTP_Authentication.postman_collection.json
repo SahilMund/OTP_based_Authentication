@@ -1,0 +1,1027 @@
+{
+	"info": {
+		"_postman_id": "c22595d1-01ab-47fb-a915-12d2503e3c9b",
+		"name": "Node_OTP_Authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12887398"
+	},
+	"item": [
+		{
+			"name": "Register_User_Success",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "sahilmund01@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Sahil Mund",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://node-otp-auth.onrender.com/api/v1/users/register",
+							"protocol": "https",
+							"host": [
+								"node-otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 16:55:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9dde5a389e1be0-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"117-B48pqF2LJJ/dG2C1uiKtIQbzMrg\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=zZhe6LHro_JnhEDApIxPIbWu7INZs5yLsgfZFgnsJtU-1684515337-0-AT7vUBTdywZrXDUsqfF+PDMF9LsS4BGTeWDV0TLLKSYxGx8nFHczz/wKtji4w07NBY2yIP4OwH3v5cyqCVkKAwc=; path=/; expires=Fri, 19-May-23 17:25:37 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=8BFN1YQRaBJSMpH32TZmb2UDtZ5fAXES5Joa1c0gYtE-1684515337768-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Email registered Successfully, Proceed for LogIn !!\",\n    \"data\": {\n        \"name\": \"Sahil Mund\",\n        \"email\": \"sahilmund01@gmail.com\",\n        \"failedAttempts\": 0,\n        \"_id\": \"6467aa09bd7f44128651a929\",\n        \"createdAt\": \"2023-05-19T16:55:37.539Z\",\n        \"updatedAt\": \"2023-05-19T16:55:37.539Z\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "Email_Already_Exists",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "sahilmund01@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Sahil Mund",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://node-otp-auth.onrender.com/api/v1/users/register",
+							"protocol": "https",
+							"host": [
+								"node-otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 16:56:38 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9ddfd00e7e1be0-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4e-CCc7kGqis1AomETsvKhoOYpZrXc\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=VNP8YBN_0KW63m9FlCwybf94QZk2Anp46Bulz56Hops-1684515398-0-AcJ354lQVXsot1rHFOztBkme5DhsyaoRmC6eY77b1MabnivgC9QB4IDEJpio2jzIt++9PnN3ii7g0wZ/7KoRS/s=; path=/; expires=Fri, 19-May-23 17:26:38 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=3yzbEOLvnjMszXOlR5qKkyWubPrQGNo7tJwdj9yc0GE-1684515398107-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Email is already registered, Proceed to Login !!\"\n}"
+				},
+				{
+					"name": "Validating_empty_fields",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "sahilmund01@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Sahil Mund",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://node-otp-auth.onrender.com/api/v1/users/register",
+							"protocol": "https",
+							"host": [
+								"node-otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:13:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9df7d4aabff476-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"46-wG03snUNS95vjpOgpNug4XSWLiE\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=quUoVCFlG5Z4lw9vFzXPIouWwdk4m0z_fCfaIGvXY9Q-1684516381-0-AVF5QIxWWe0eZzqa2YrtEvhF/gWv/T8rElcxR2E1XY48BfywbmzQSvQnN8ktZfiodtGkPl8x9tcKcNI1Rr7AaNs=; path=/; expires=Fri, 19-May-23 17:43:01 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=EddP7VynvSZ6HWf1zuPBxnabJ3LSGWb6o1vgCeWRW7c-1684516381784-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Email and Name Filed should not be empty\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Generate_OTP",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "User_Not_Registered",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"sahilmund011@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://node-otp-auth.onrender.com/api/v1/users/generate-otp",
+							"protocol": "https",
+							"host": [
+								"node-otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"generate-otp"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 16:57:46 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9de17e5a221be0-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6b-yqMAnCcVsqAE+PhzLc5rKF2udOI\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=NM0gFtyeNt8hJKobvw09BoF9dlO33TNj9mK8n.WA_mo-1684515466-0-AY44u6vz/iODIqygOOT6E3ZcG8bVEvG5gv2QTYc5AVaijaY3+fXXvU+8R+i1crk5rR2bPPDSCP8/vjVv0UYBtUY=; path=/; expires=Fri, 19-May-23 17:27:46 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=jL.GMpsEtFpbZVtpFlXtORCqehLen9u5QcV_b0Y1IYg-1684515466979-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"You are not a registered user, kindly register yourself to proceed for Login \"\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"sahilmund01@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://node-otp-auth.onrender.com/api/v1/users/generate-otp",
+							"protocol": "https",
+							"host": [
+								"node-otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"generate-otp"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 16:58:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9de2443f211be0-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"59-ZQxdljB8BnqEnNpPOolfo8a9Pjg\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=l_pRoswMJOue6.EchaBPYnTsPL2qGAJae19wMeEnLS0-1684515500-0-AYzdAqZZY+JfQvlRAZJTMEIZ8bSCesvo4uYWfPLHpWaQeGMjsMVt95nwtU+iYWBorW/XgjQ7uSQrzzgMpNIN9cg=; path=/; expires=Fri, 19-May-23 17:28:20 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=3bnSAi0UacfWS3QSKHc5Kh3K8t.QKcITJbEpWkkICes-1684515500492-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"OTP sent successfully to your email -  sahilmund01@gmail.com\"\n}"
+				},
+				{
+					"name": "New_OTP_Generate_Vlidation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"sahilmund01@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://node-otp-auth.onrender.com/api/v1/users/generate-otp",
+							"protocol": "https",
+							"host": [
+								"node-otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"generate-otp"
+							]
+						}
+					},
+					"status": "Too Many Requests",
+					"code": 429,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:10:49 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9df498cc01f476-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5c-dGrpbW4Gz51lOrzk7QK3zOJePvU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=IxCGZZpfcMHLNZ098qsvgd09Jreqo9b5eFX.atlXwkQ-1684516249-0-AYwl6oNVwKadgjSlvNyM8mDF5uTmE4DOJL3ptKlInRYnxS94g5riGiZvgjmfAbINFdFneeK1e6in9y3hAhbh0+A=; path=/; expires=Fri, 19-May-23 17:40:49 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=4KjazPTTzkciwBiKCEC5PVmBa7oBTEG568DFaKL9mJw-1684516249468-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Please wait for at least 1 minute before generating a new OTP.\"\n}"
+				},
+				{
+					"name": "Validating_Required_Fields",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://node-otp-auth.onrender.com/api/v1/users/generate-otp",
+							"protocol": "https",
+							"host": [
+								"node-otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"generate-otp"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:14:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9df9450a46f476-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3d-YocoWIRW1uG3YCDPXCYrer7wRgQ\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=CSEIkmcXFrBj9QBi_RUa6YMPDZSqw.HGZqOC9nj4ChQ-1684516440-0-AXvXjjr7XClf1TvTxSdGpN21srWTMX+XxTkcH8b3t9WiVZkEuYwh51x5Z4DzwpxOVJ2QiXv7eLufleY2z2+WJwE=; path=/; expires=Fri, 19-May-23 17:44:00 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=X0kfHSojHDfTAdcNRKM1HlOile9MR530kqNoHrCTcoA-1684516440744-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Email field should not be empty\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login_And_Verify_OTP",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "sahilmund01@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "809487",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://node-otp-auth.onrender.com/api/v1/users/login",
+							"protocol": "https",
+							"host": [
+								"node-otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:00:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9de54b9ce11be0-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5-nI24Gio9srosRx8LKL2XmZNnHJY\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=nBmLz39DlANYLdNNwvxaI1hQPZRwqR0UWUNUWcWL.A4-1684515623-0-AWgUyg0rNrDUmLMTIRyLM1PKr7Qt6/3qDlPpWBvjB5sQ9CtxZpfzjRziuT84vzAC4dYZVzGKb/oIhR4eCE0Bufs=; path=/; expires=Fri, 19-May-23 17:30:23 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=BMxEiEn5b66azLUjUcs5ZKmNbnoeYIFZ01m6eQu8ubo-1684515623507-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhaGlsbXVuZDAxQGdtYWlsLmNvbSIsImlhdCI6MTY4NDUxNTYyMywiZXhwIjoxNjg0NTE5MjIzfQ.q0EadCBjjuJl6yZjSJ-c67MJkIbgzYO8hkxPHSFR2P0\"\n}"
+				},
+				{
+					"name": "Invalid_OTP",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "sahilmund01@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "809487",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://node-otp-auth.onrender.com/api/v1/users/login",
+							"protocol": "https",
+							"host": [
+								"node-otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:00:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9de5ac99a41be0-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"31-aZ7MfKMVT80eUXe0S4oUPiTfHzI\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=fWXi6i5wHUjnporFoPrOy31RbHbqV0EifIUAc_ip.FQ-1684515637-0-AQ0LMQkhuaoufBtZbHBn5+dFBwPLS43vFS7rhVOKqZTQkNZwOkieoj2//qtbCeVxGjnUXvkqHkx/Hxt80IEd+T4=; path=/; expires=Fri, 19-May-23 17:30:37 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=vHBXra8ly1h3klDBQeCyA86bVnGdtgdtfFbvnxQ5G_Y-1684515637775-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"error\": \"Invalid OTP or email.\"\n}"
+				},
+				{
+					"name": "Blocking_Account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "sahilmund01@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "809487",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://node-otp-auth.onrender.com/api/v1/users/login",
+							"protocol": "https",
+							"host": [
+								"node-otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:01:07 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9de65fdd241be0-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"45-46TvvX6KHpdTTcH6hYqBSjry3ec\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=OBTs9Q6yAvqbEyew3sOHXLjmWGTD5ghH4mohmDsbsTk-1684515667-0-Afyrnrq/PR1Dod+i1eaXbzQiF0h1vPeFaB1yDKNjHGiqtfwvrVC5U87fYMW0NN2HXhTjwtvZsF/cT4C7NJpbVnY=; path=/; expires=Fri, 19-May-23 17:31:07 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=0JZkEpjJuzL1858RyLQz64Bb_7xh4QM0ujLtDrgq_Hw-1684515667121-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": false,\n    \"message\": \"Account blocked. Try again after 1 hour.\"\n}"
+				}
+			]
+		}
+	]
+}
