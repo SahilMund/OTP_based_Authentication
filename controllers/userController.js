@@ -43,6 +43,7 @@ module.exports.register = async (req, res) => {
   }
 };
 
+// Controller to handle generate-otp route
 module.exports.generateOtp = async (req, res) => {
   const { email } = req.body;
 
@@ -108,7 +109,7 @@ module.exports.generateOtp = async (req, res) => {
   }
 };
 
-// Login API endpoint
+// Controller to handle login route
 module.exports.verifyOtp = async (req, res) => {
   const { email, otp } = req.body;
 
