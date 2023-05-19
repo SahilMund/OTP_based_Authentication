@@ -95,43 +95,27 @@ npm start
 
 ```
 
+## Dotenv file cotent :-
+
+```
+# FOR NODEMAILER , USER EMAIL AND PASSWORD 
+TRANSPORTER_USER_EMAIL =  <Enter nodemailer user email>
+TRANSPORTER_USER_PASSWORD = <Enter nodemailer password>
+
+# Port
+PORT = <Enter PORT>
+
+# JWT Secret key
+JWT_SECRET_KEY = <Enter JWT Secret>
+
+# MongoDB configs
+DB_NAME = <Enter DB Name>
+MONGO_URL = <Enter your Mongo URL>
+
+```
 
 ## Folder Structure :-
 ```
-.gitignore
-.vscode
-   |-- settings.json
-READEME.md
-config
-   |-- mongoose.js
-   |-- passport-jwt-strategy.js
-   |-- status-enum.js
-controllers
-   |-- api
-   |   |-- index.js
-   |   |-- v1
-   |   |   |-- doctor_controller.js
-   |   |   |-- index.js
-   |   |   |-- patient_controller.js
-   |   |   |-- report_controller.js
-   |-- index.js
-index.js
-models
-   |-- doctor.js
-   |-- patient.js
-   |-- report.js
-package-lock.json
-package.json
-postman             // Here postman folder contains the json file, which can be imported to postman to see the documentation
-   |-- Hospital_API_V1.postman_collection.json
-routes
-   |-- api
-   |   |-- index.js
-   |   |-- v1
-   |   |   |-- doctors.js
-   |   |   |-- index.js
-   |   |   |-- patients.js
-   |   |   |-- reports.js
-   |-- index.js
+
 
 ```
